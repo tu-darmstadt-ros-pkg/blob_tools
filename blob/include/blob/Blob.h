@@ -93,7 +93,7 @@ public:
   const value_type *begin() const { return pointer_; }
   const value_type *end()   const { return pointer_ + size_; }
 
-  bool isCopy() const { return copy_; }
+  bool isCopy() const { return copy_ != nullptr; }
   void setCompressed(bool compressed) { compressed_ = compressed; }
   bool isCompressed() const { return compressed_; }
 
