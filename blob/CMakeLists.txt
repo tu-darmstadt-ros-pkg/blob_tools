@@ -8,7 +8,8 @@ find_package(catkin REQUIRED message_generation)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
-find_package(BZip2)
+find_package(BZip2
+roscpp)
 
 if(BZIP2_FOUND)
   add_definitions(-DHAVE_BZIP2 ${BZIP2_DEFINITIONS})
